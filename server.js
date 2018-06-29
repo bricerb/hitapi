@@ -1,6 +1,7 @@
 require('dotenv').config();
 let app = require('express')();
 let bodyParser = require('body-parser');
+let request = require('request');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
